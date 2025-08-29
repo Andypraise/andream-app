@@ -236,11 +236,15 @@ text-align: center;
   }
   .form-section button{
     width: 290px;
+    
   }
   .games{
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  footer{
+    margin-top: 25px;
   }
   footer p{
     font-size: 13px;
