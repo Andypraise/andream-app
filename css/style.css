@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), blue), url(../img/image1.png);
+  background-position: center;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+ 
+}
+
+html{
+ scroll-behavior: smooth;
+}
+.navbar {
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-menu li {
+  list-style: none;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-menu a:hover{
+  text-decoration: underline;
+}
+.btm button {
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  margin-top: 100px;
+}
+.home-feature {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-feature h2 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+.home-feature p {
+  font-size: 30px;
+}
+.home-feature button {
+  width: 150px;
+  height: 40px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 30px;
+}
+.show {
+  display: none;
+}
+.show a {
+  text-decoration: none;
+  color: #bb2d2d;
+}
+.form-feat {
+  display: none;
+}
+.form-section {
+  background: transparent;
+  backdrop-filter: blur (10px);
+  border: 3px solid white;
+  padding: 10px;
+  width: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+.form-section h2 {
+  margin-bottom: 10px;
+}
+.form-section input {
+  width: 350px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.form-section button {
+  width: 350px;
+  height: 45px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.btn {
+  margin-top: 20px;
+}
+.btn p a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn p a:hover {
+  text-decoration: underline;
+}
+.scrolling {
+  margin-bottom: 20px;
+  animation: changeColor 3s alternate infinite ease-in-out;
+}
+
+.games {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 35px;
+  
+}
+.card {
+  color: #fff;
+}
+.img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
+.card h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.card p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.card .btc {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  color: blue;
+
+
+}
+footer{
+  text-align: center;
+  margin-top: 70px;
+  color: #fff;
+}
+.install{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  
+}
+@keyframes changeColor {
+  from {
+    color: red;
+  }
+  to {
+    color: blue;
+  }
+  to {
+    color: white;
+  }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@media(max-width:768px){
+  .nav-menu{
+    display: none;
+  }
+  .logo h1{
+    font-size: 15px;
+  }
+  .home-feature h2{
+ font-size: 20px;
+  }
+  .home-feature p{
+    font-size: 16px;
+  }
+  .form-feat h1{
+font-size: 20px;
+text-align: center;
+  }
+  .form-section{
+    width: 320px;
+    font-size: 15px;
+  }
+  .form-section input{
+    width: 290px;
+  }
+  .form-section button{
+    width: 290px;
+  }
+  .games{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer p{
+    font-size: 13px;
+  }
+}
