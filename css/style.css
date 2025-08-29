@@ -165,6 +165,7 @@ main{
   width: 350px;
   height: 250px;
   border-radius: 5px;
+  margin-top: 30px;
 }
 .card h3 {
   margin-top: 20px;
@@ -216,10 +217,13 @@ footer{
 .done{
   position: fixed;
   bottom:0;
-  left: 86%;
+  left: 0;
   width: 100%;
   z-index: 999;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .done button{
   padding: 0.75rem 1rem;
@@ -272,7 +276,7 @@ text-align: center;
     text-align: center;
   }
   .done{
-    left: 48%;
+    left: 25%;
   }
   footer{
     margin-top: 25px;
