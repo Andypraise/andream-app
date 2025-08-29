@@ -53,6 +53,9 @@ html{
   border-radius: 5px;
   cursor: pointer;
 }
+main{
+  position: relative;
+}
 
 .home-section {
   display: flex;
@@ -210,6 +213,27 @@ footer{
     transform: scale(1.1);
   }
 }
+.done{
+  position: fixed;
+  bottom:0;
+  left: 86%;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 20px;
+}
+.done button{
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #250303;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: #25D366;
+}
 @media(max-width:768px){
   .nav-menu{
     display: none;
@@ -242,6 +266,9 @@ text-align: center;
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  .done{
+    left: 65%;
   }
   footer{
     margin-top: 25px;
