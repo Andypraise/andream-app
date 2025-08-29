@@ -95,7 +95,7 @@ main{
 }
 .show a {
   text-decoration: none;
-  color: #bb2d2d;
+  color: #fff;
 }
 .form-feat {
   display: none;
@@ -198,10 +198,8 @@ footer{
   
 }
 @keyframes changeColor {
+  
   from {
-    color: red;
-  }
-  to {
     color: blue;
   }
   to {
